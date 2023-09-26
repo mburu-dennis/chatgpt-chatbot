@@ -3,8 +3,12 @@ import readlineSync from 'readline-sync';
 import colors from 'colors';
 
 async function main() {
-    const userName = readlineSync.question('May I have your name?');
-    console.log('Hello ${userName}');
+  console.log(colors.bold.green('Welcome to the Chatbot Program!'));
+  console.log(colors.bold.green('You can start chatting with the bot.'));
+
+  while (true) {
+    const userInput = readlineSync.question(colors.yellow('You: '));
+  }
 }
 
 main();
