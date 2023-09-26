@@ -11,13 +11,13 @@ async function main() {
 
     try {
         //call the API with user input
-        const completion = await openai.createChatCompletion({
+        const chatCompletion = await openai.chat.completions.create({
             model: 'gpt-3.5-turbo',
-            messages: [{ role: 'user', content: userInput }]
+            messages: [{ 'role': 'user', 'content': userInput }]
         })
 
         //get completion text/content
-        const completionText = completion.data.choices[0].message.content; 
+        const completionText = chatCompletion.choices[0].message.content; 
 
         if (userInput.toLowerCase() === 'exit') {
             console.log(colors.green('Bot: ') + completionText);
