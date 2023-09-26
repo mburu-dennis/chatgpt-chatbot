@@ -1,5 +1,5 @@
 # chatgpt-chatbot
-This is a ChatGPT chatbot written in Node.js that runs in the terminal
+This is a ChatGPT v4 chatbot written in Node.js that runs in the terminal
 
 ## usage
 Get your OpenAI API key [here](https://platform.openai.com/account/api-keys)
