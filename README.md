@@ -11,7 +11,7 @@ OPENAI_API_KEY=YOURKEY
 
 Install dependencies:
 ```
-npm Install
+npm Install colors dotenv openai readline-sync 
 ```
 
 Run the bot:
